@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 700;
+}
+.productname{
+    font-size: 40px;
+    /* font-weight: 900; */
+}
+.price{
+    font-size: 40px;
+}
+.carImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer-specs{
+    display: flex;
+    /* padding: 20px; */
+    margin-bottom: 50px;
+}
+.specifacations{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    width: 70%;
+    border: 1px solid black;
+    padding: 30px;
+}
+.transission{
+    width: 30%;
+    border: 1px solid black;
+    padding: 30px;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
