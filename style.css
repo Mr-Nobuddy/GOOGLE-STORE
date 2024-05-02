@@ -14,10 +14,20 @@ body{
 }
 .productname{
     font-size: 40px;
-    /* font-weight: 900; */
+    /* text-align: center; */
+}
+.bike_name{
+    color: orange;
+    -webkit-text-stroke: 2px #ee6e0c; 
+    -webkit-text-fill-color: transparent;
+    opacity: 0.55;
 }
 .price{
     font-size: 40px;
+}
+.city{
+    font-size: 25px;
+    font-weight: 400;
 }
 .carImage{
     display: flex;
