@@ -1,175 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Google Store</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+  </head>
 
   <body>
-    <!-- <div class="container-products-1">
-      <div class="products">
-        <div class="buds-heading">Pixel phones</div>
-        <div class="buds-pro-decs-1">The only phone</div>
-        <div class="buds-pro-decs-2">engineered by Google</div>
-        <div class="buds-pro-btn-container"><button class="buds-pro-btn">Explore phones</button></div>
-        <div><video class="buds-pro-vid" src="buds-pro-2.mp4"></video></div>
+    <div id="main">
+      <div id="page1">
+        <h1>Welcome to the era of spatial computing</h1>
+        <video
+          src="https://www.apple.com/105/media/us/apple-vision-pro/2023/7e268c13-eb22-493d-a860-f0637bacb569/anim/foundation-spatial-computing/large.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
       </div>
-
-      <div class="products">
-        <div class="buds-heading">Google Pixel Watch 2</div>
-        <div class="buds-pro-decs-1">Help by Google. Health</div>
-        <div class="buds-pro-decs-2">by FitBit. Made for you</div>
-        <div class="buds-pro-btn-container"><button class="buds-pro-btn">Learn more</button></div>
-        <div><video class="buds-pro-vid" src="buds-pro-2.mp4"></video></div>
+      <div id="page2">
+        <h1>Apple Vision Pro seamlessly blends <br> digital content with your physical space.</h1>
+        <video src="https://www.apple.com/105/media/us/apple-vision-pro/2023/7e268c13-eb22-493d-a860-f0637bacb569/anim/foundation-digital-canvas/large.mp4" autoplay loop muted ></video>
+    </div>
+    <div id="page3">
+        <div id="page3-upper">
+            <img src="https://www.apple.com/v/apple-vision-pro/a/images/overview/intro/logo__4zgkuyebgtem_large.png" alt="">
+            <div id="page3-upper-inner">
+                <h3>WATCH THE FILM</h3>
+                <h3>WATCH THE EVENT ></h3>
+            </div>
+        </div>
+        <img src="./Apple vision image.png" alt="">
+        <button> + Take a closer look at Vision Pro</button>
+    </div>
+    <div id="page4">
+        <div id="center-page4">
+            <h5>Apps</h3>
+                <h1>Free your desktop.
+                    <br>
+                    And your apps will follow.</h1>
+        </div>
+        <video src="mobile_video.mp4" autoplay loop muted></video>
+    </div>
+    <div id="page5">
+      <div id="center-page5">
+          <h5>Apps</h3>
+              <h1>Free your desktop.
+                  <br>
+                  And your apps will follow.</h1>
       </div>
-    </div> -->
-
-    <!-- <div class="container-products-1">
-      <div class="products">
-        <div class="buds-heading">Pixel</div>
-        <div class="buds-pro-decs-1">The only phone</div>
-        <div class="buds-pro-decs-2">engineered by Google</div>
-        <div class="buds-pro-btn-container"><button class="buds-pro-btn">Explore phones</button></div>
-        <div><video class="buds-pro-vid" src="buds-pro-2.mp4"></video></div>
-      </div>
-
-      <div class="products">
-        <div class="buds-heading">Google Pixel Watch 2</div>
-        <div class="buds-pro-decs-1">Help by Google. Health</div>
-        <div class="buds-pro-decs-2">by FitBit. Made for you</div>
-        <div class="buds-pro-btn-container"><button class="buds-pro-btn">Learn more</button></div>
-      </div>
-    </div> -->
-
-    <div class="carousel">
-      <!-- list item -->
-      <div class="list">
-        <div class="item">
-          <img src="images/phones.webp" />
-          <div class="content">
-            <div class="author">LUNDEV</div>
-            <div class="title">DESIGN SLIDER</div>
-            <div class="topic">ANIMAL</div>
-            <div class="des">
-              <!-- lorem 50 -->
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
-              sequi, rem magnam nesciunt minima placeat, itaque eum neque
-              officiis unde, eaque optio ratione aliquid assumenda facere ab et
-              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
-              nisi reprehenderit tempora at laborum natus unde. Ut,
-              exercitationem eum aperiam illo illum laudantium?
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <button>SUBSCRIBE</button>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/buds_b.webp" />
-          <div class="content">
-            <div class="author">LUNDEV</div>
-            <div class="title">DESIGN SLIDER</div>
-            <div class="topic">ANIMAL</div>
-            <div class="des">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
-              sequi, rem magnam nesciunt minima placeat, itaque eum neque
-              officiis unde, eaque optio ratione aliquid assumenda facere ab et
-              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
-              nisi reprehenderit tempora at laborum natus unde. Ut,
-              exercitationem eum aperiam illo illum laudantium?
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <button>SUBSCRIBE</button>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/buds_w.webp" />
-          <div class="content">
-            <div class="author">LUNDEV</div>
-            <div class="title">DESIGN SLIDER</div>
-            <div class="topic">ANIMAL</div>
-            <div class="des">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
-              sequi, rem magnam nesciunt minima placeat, itaque eum neque
-              officiis unde, eaque optio ratione aliquid assumenda facere ab et
-              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
-              nisi reprehenderit tempora at laborum natus unde. Ut,
-              exercitationem eum aperiam illo illum laudantium?
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <button>SUBSCRIBE</button>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/camera_img.webp" />
-          <div class="content">
-            <div class="author">LUNDEV</div>
-            <div class="title">DESIGN SLIDER</div>
-            <div class="topic">ANIMAL</div>
-            <div class="des">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
-              sequi, rem magnam nesciunt minima placeat, itaque eum neque
-              officiis unde, eaque optio ratione aliquid assumenda facere ab et
-              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
-              nisi reprehenderit tempora at laborum natus unde. Ut,
-              exercitationem eum aperiam illo illum laudantium?
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <button>SUBSCRIBE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- list thumnail -->
-      <div class="thumbnail">
-        <div class="item">
-          <img src="images/watch.webp" />
-          <div class="content">
-            <div class="title">Name Slider</div>
-            <div class="description">Description</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/next-audio.webp" />
-          <div class="content">
-            <div class="title">Name Slider</div>
-            <div class="description">Description</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/next_mini.webp" />
-          <div class="content">
-            <div class="title">Name Slider</div>
-            <div class="description">Description</div>
-          </div>
-        </div>
-        <!-- <div class="item">
-          <img src="image/img4.jpg" />
-          <div class="content">
-            <div class="title">Name Slider</div>
-            <div class="description">Description</div>
-          </div>
-        </div> -->
-      </div>
-      <!-- next prev -->
-
-      <div class="arrows">
-        <button id="prev"><</button>
-        <button id="next">></button>
-      </div>
-      <!-- time running -->
-      <div class="time"></div>
+      <video src="video2.mp4" autoplay loop muted></video>
+  </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+      integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+      integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./app.js"></script>
   </body>
 </html>
