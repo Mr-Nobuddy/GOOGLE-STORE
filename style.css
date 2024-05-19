@@ -18,13 +18,10 @@ main {
     width: 100%;
     padding: 1px 3%;
     background: #070A0F;
-    background-color: #ffff;
-}
-
-
-#main{
+    /* background-color: #ffff; */
     background-color: #070B10;
 }
+
 
 
 
@@ -35,6 +32,7 @@ main {
     width: 100%;
     position: relative;
     cursor: none;
+    /* overflow: hidden; */
 }
 
 .cta_container>.cta_card {
@@ -97,6 +95,10 @@ main {
         inset -5px -5px 10px #444;
     color: #d6d6d6;
     transition: 500ms;
+}
+
+.cta_btn:hover {
+    cursor: none;
 }
 
 
