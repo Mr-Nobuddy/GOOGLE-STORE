@@ -16,6 +16,129 @@ body {
 main {
     height: 100%;
     width: 100%;
-    padding: 0 3%;
+    padding: 1px 3%;
     background: #070A0F;
 }
+
+/* CTA section start */
+.cta_container {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    cursor: none;
+}
+
+.cta_container>.cta_card {
+    height: 100%;
+    width: 100%;
+    margin: 30px 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: (10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta_card>h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    font-family: poppin;
+}
+
+.cta_card>p {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    font-family: poppin;
+    width: 50%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* cta btn */
+.cta_btn {
+    margin: 12px;
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+        inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+
+.cta_btn:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+        inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+
+
+/* custome cursor bg */
+.cta_cussor_bg {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgb(144, 161, 255);
+    z-index: 1;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.cta_container:hover .cta_cussor_bg {
+    opacity: 1;
+}
+
+/* custome cursor */
+.cta_cursor_dot {
+    width: 5px;
+    height: 5px;
+    background: white;
+}
+
+.cta_cursor_outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FFFFFF80;
+}
+
+.cta_cursor_dot,
+.cta_cursor_outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.cta_container:hover .cta_cursor_dot,
+.cta_container:hover .cta_cursor_outline {
+    opacity: 1;
+}
+
+/* CTA section End */
