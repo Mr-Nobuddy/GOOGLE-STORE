@@ -37,14 +37,14 @@ function loco() {
   // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 
   const locoScroll = new LocomotiveScroll({
-    el: document.querySelector("#main"),
+    el: document.querySelector("#main1"),
     smooth: true,
   });
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
 
-  // tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
-  ScrollTrigger.scrollerProxy("#main", {
+  // tell ScrollTrigger to use these proxy methods for the "#main1" element since Locomotive Scroll is hijacking things
+  ScrollTrigger.scrollerProxy("#main1", {
     scrollTop(value) {
       return arguments.length
         ? locoScroll.scrollTo(value, 0, 0)
@@ -58,8 +58,7 @@ function loco() {
         height: window.innerHeight,
       };
     },
-    // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-    pinType: document.querySelector("#main").style.transform
+    pinType: document.querySelector("#main1").style.transform
       ? "transform"
       : "fixed",
   });
@@ -77,7 +76,7 @@ var tl = gsap.timeline({
     trigger: `#page1`,
     start: `top top`,
     scrub: 1,
-    scroller: `#main`,
+    scroller: `#main1`,
     pin: true,
   },
 });
@@ -91,7 +90,7 @@ var tl1 = gsap.timeline({
     trigger: `#page2`,
     start: `top top`,
     scrub: 1,
-    scroller: `#main`,
+    scroller: `#main1`,
     pin: true,
   },
 });
@@ -105,7 +104,7 @@ var tl2 = gsap.timeline({
     trigger: `#page4`,
     start: `top top`,
     scrub: 1,
-    scroller: `#main`,
+    scroller: `#main1`,
     pin: true,
   },
 });
@@ -117,7 +116,7 @@ tl2.to("#page4>#center-page4", {
   display: "none",
   scrollTrigger: {
     trigger: `#page4>#center-page4`,
-    scroller: `#main`,
+    scroller: `#main1`,
     start: `top -10%`,
     // markers:true,
     scrub: 1,
@@ -130,7 +129,7 @@ var tl2 = gsap.timeline({
     trigger: `#page5`,
     start: `top top`,
     scrub: 1,
-    scroller: `#main`,
+    scroller: `#main1`,
     pin: true,
   },
 });
@@ -142,7 +141,7 @@ tl2.to("#page5>#center-page5", {
   display: "none",
   scrollTrigger: {
     trigger: `#page5>#center-page5`,
-    scroller: `#main`,
+    scroller: `#main11`,
     start: `top top`,
     scrub: 1,
   },
